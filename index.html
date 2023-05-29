@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alura Encriptador </title>
     <link rel="stylesheet" href="/css/style.css">
-    
+
 
 </head>
+
 <body>
 
     <div class="contenedor">
 
         <div class="campo_encrip">
-            <textarea  class="textin" placeholder="Ingresa el texto"name="texto" id="texto" cols="30" rows="10"></textarea>
+            <textarea class="text-in" placeholder="Ingresa el texto" name="texto" id="texto" cols="30"
+                rows="10"></textarea>
         </div>
 
         <div class="condicion">
@@ -22,20 +25,23 @@
         </div>
 
         <div class="btns">
-            <button class="btn-encriptar" type="button">Encriptar</button>
-            <button class="btn-desenciptar" type="button">Desencriptar</button>
+            <button class="btn-encriptar" type="button" onclick="encriptar()">Encriptar</button>
+            <button class="btn-desenciptar" type="button" onclick="desencriptar()">Desencriptar</button>
         </div>
-    </div>
-  
-    <div class="text-encrip">
 
-        <img src="" alt="" id="img-encrip">
-        <div class="mensaje" id="mensaje-encrip">
-            <h2 class="mensaje-principal">Ningun mensaje encontrado</h2>
-            <p class="parrafo-in">Ingresa el Texto que deseas Encriptar o Desencriptar</p>
+
+        <div class="text-encrip">
+
+            <img src="/img/img-deco.png" alt="Imagen-encriptador" class="img-encrip">
+            <div class="mensaje" id="mensaje-encrip">
+                <h2 class="mensaje-principal">Ningun mensaje encontrado</h2>
+                <p class="parrafo-in">Ingresa el Texto que deseas Encriptar o Desencriptar</p>
+                <!-- <textarea name="mensaje-resultado" id="mnsj-resultaado" cols="30" rows="10"></textarea> -->
+            </div>
         </div>
-    </div>
 
-    <script src="/js/script.js"></script>  
+    </div>
+    <script src="/js/script.js"></script>
 </body>
+
 </html>
