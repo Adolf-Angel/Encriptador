@@ -142,7 +142,7 @@ html {
 
 }
 
-.text-encrip{
+.text-encrip {
     display: flex;
     justify-content: center;
     position: absolute;
@@ -153,10 +153,10 @@ html {
     background: var(--blanco);
     box-shadow: 0rem 2.4rem 3.2rem -0.8rem rgba(0, 0, 0, 0.08);
     border-radius: 3.2rem;
-    
+
 }
 
-.mensaje{
+.mensaje {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -169,7 +169,7 @@ html {
     text-align: center;
 }
 
-.mensaje h2{
+.mensaje h2 {
     width: 60%;
     font-family: var(--fuenteParrafos);
     font-style: normal;
@@ -180,7 +180,7 @@ html {
     color: #343a40;
 }
 
-.mensaje p{
+.mensaje p {
     width: 80%;
     font-family: var(--fuenteHeading);
     font-style: normal;
@@ -192,9 +192,80 @@ html {
 
 }
 
-.img-encrip{
+.img-encrip {
     position: absolute;
     width: 80%;
     height: 50%;
-    top:15%;
+    top: 15%;
+}
+
+
+@media (max-width: 720px) {
+    .contenedor {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .campo_encrip {
+        width: 100%;
+    }
+
+    .text-in {
+        width: 80%;
+        height: 60%;
+        left: 10%;
+        top: 5%;
+
+    }
+
+    .condicion {
+        width: 80%;
+        left: 10%;
+        top: 67%;
+    }
+
+    .condicion p {
+        font-size: 1.6rem;
+    }
+
+    .btns {
+        width: 80%;
+        left: 10%;
+        top: 70%;
+    }
+
+    .btn-encriptar, .btn-desenciptar {
+        width: 48%;
+
+        
+        border-radius: 1.6rem;
+    }
+
+    .btn-encriptar:hover, .btn-desenciptar:hover{
+        margin: 0.3%;
+        width: 47.5%;
+        padding: 1.8%;
+    }
+
+    .text-encrip{
+        width: 80%;
+        height: 15%;
+        left: 10%;
+        top: 80%;
+
+
+    }
+
+    .mensaje{
+      width: 100%;
+      top: 5%;  
+    }
+
+    .img-encrip{
+        top: 0%;
+        display: none;
+        visibility: hidden;
+    }
+
 }
